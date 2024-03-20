@@ -4,9 +4,9 @@ import { FaCediSign } from "react-icons/fa6";
 
 const EquityPage = () => {
   return (
-    <main className="flex border-2 border-red-600 max-w-[1504px] my-0 mx-auto py-0">
+    <main className="flex max-w-[1504px] my-0 mx-auto py-0 relative top-[55px]">
       {/* Side Nav */}
-      <nav className="px-4 py-4 flex flex-col items-cente gap-6 border border-violet-800 w-1/4 h-[calc(100vh-55px)] bg-lightgrey">
+      <nav className="px-4 py-4 flex flex-col items-cente gap-6 w-1/4 h-[calc(100vh-55px)] bg-lightgrey fixed left-0">
         <button className="bg-accentpink h-[30px] rounded-md">Dashboard</button>
         <button className="bg-accentpink h-[30px] rounded-md" >Reports</button>
         <button className="bg-accentpink h-[30px] rounded-md" >LP Trading</button>
@@ -14,8 +14,8 @@ const EquityPage = () => {
         <button className="bg-accentpink h-[30px] rounded-md mt-auto flex items-center justify-center gap-2" ><span>Code Maintenance</span><IoIosArrowUp /></button>
       </nav>
       {/* Main Section (expense rate) */}
-      <section className="py-4 px-4 border-2 border-yellow-600 flex-1">
-        <div className="border border-red-600 flex flex-col gap-4 mb-[50px]">
+      <section className="py-4 px-4 w-3/4 ml-[25%]">
+        <div className="flex flex-col gap-4 mb-[50px]">
           <div className="flex items-center justify-between">
             <h2 className="font-semibold">Exchange Rates</h2>
             <form>
@@ -39,7 +39,7 @@ const EquityPage = () => {
             </div>
           </div>
         </div>
-        <div className="border border-red-600 flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between">
             <h2 className="font-semibold">Recent Requests</h2>
             <button className="px-2 font-medium h-[40px] border-2 rounded-md border-accentmagenta">View All Requests</button>
