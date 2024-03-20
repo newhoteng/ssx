@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+// import Header from './components/Header';
+import NavBar from './components/NavBar';
 import EquityPage from './pages/Equity/EquityPage';
 import AnalyticsPage from './pages/Analytics/AnalyticsPage';
 import FixedIncomePage from './pages/FixedIncome/FixedIncomePage';
@@ -16,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Header />}>
+        <Route path="/" element={<NavBar />}>
           <Route index element={<EquityPage />} />
           <Route path="/fixedincome" element={<FixedIncomePage />} />
           <Route path="/myaccounts" element={<MyAccountsPage />} />

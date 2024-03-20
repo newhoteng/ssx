@@ -10,7 +10,7 @@ import cediPounds from "../../data/CediPound.json";
 const ExchangeRates = () => {
   return (
     <div className="flex flex-col gap-4 mb-[50px]">
-          <div className="flex items-center justify-between">
+          <div className="flex sm:flex-row flex-col items-center gap-4 sm:justify-between">
             <h2 className="font-bold">Exchange Rates</h2>
             <form>
               <select name="currency" className="rounded border-[0.5px] border-deepgrey w-[300px] h-[40px] outline-none">

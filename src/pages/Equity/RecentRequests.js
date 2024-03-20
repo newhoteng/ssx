@@ -10,196 +10,179 @@ const RecentRequests = () => {
       <table className="">
         <thead>
           <tr className="border-y-2 border-white bg-deepgrey text-center h-[50px] tab-head">
-            <th scope="col">Provider</th>
-            <th scope="col">Broker</th>
+            <th className="sm:table-cell hidden" scope="col">Provider</th>
+            <th className="sm:table-cell hidden" scope="col">Broker</th>
             <th scope="col">Client ID</th>
-            <th scope="col">Transaction Amount</th>
-            <th scope="col">Transaction ID</th>
+            <th className="text-wrap" scope="col">Transaction Amount</th>
+            <th className="sm:table-cell hidden" scope="col">Transaction ID</th>
             <th scope="col">Status</th>
-            <th scope="col">Date</th>
+            <th className="sm:table-cell hidden" scope="col">Date</th>
           </tr>
         </thead>
         <tbody className="text-center">
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
             <td>23,400.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Fullfilled</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
           <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
+            <td className="sm:table-cell hidden">Example</td>
+            <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
             <td>1,200,000.00</td>
-            <td>56789</td>
+            <td className="sm:table-cell hidden">56789</td>
             <td>Pending</td>
-            <td>01-09-2023</td>
+            <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>CDH</td>
-            <td>123466</td>
-            <td>23,400.00</td>
-            <td>56789</td>
-            <td>Fullfilled</td>
-            <td>01-09-2023</td>
-          </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td>Example</td>
-            <td>GoldCoast</td>
-            <td>123456</td>
-            <td>1,200,000.00</td>
-            <td>56789</td>
-            <td>Pending</td>
-            <td>01-09-2023</td>
-          </tr>
+          
         </tbody>
       </table>
     </div>

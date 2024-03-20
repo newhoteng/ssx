@@ -15,7 +15,7 @@ const SideNav = () => {
   };
 
   return (
-    <nav className="px-8 py-4 flex flex-col items-cente gap-6 w-1/4 h-[calc(100vh-55px)] bg-lightgrey fixed">
+    <nav className="hidden px-2 xl:px-8 py-4 lg:flex flex-col items-cente gap-6 w-1/4 h-[calc(100vh-55px)] bg-lightgrey fixed">
       <button className="bg-accentpink h-[30px] rounded-md text-white font-medium">Dashboard</button>
       <button className="bg-accentpink h-[30px] rounded-md text-white font-meduim" >Reports</button>
       <button className="bg-accentpink h-[30px] rounded-md text-white font-medium" >LP Trading</button>
