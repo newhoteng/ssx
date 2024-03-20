@@ -8,7 +8,6 @@ import { IoIosArrowUp } from "react-icons/io";
 
 
 const MobileHeaderjs = () => {
-
   // User click action
   const [signOutClass, setSignOutClass] = useState('sign-out hidden');
   const [isUserClicked, setIsUserClicked] = useState(false);
