@@ -5,12 +5,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // colors: {
-      //   'lightgrey': 'hsl()',
-      //   'deepgrey': 'hsl()',
-      //   'accentpink': 'hsl()',
-      //   'accentmagenta': 'hsl()',
-      // },
+      colors: {
+        // 'lightgrey': 'hsl()',
+        'lightgrey': '#ededed',
+        // 'deepgrey': 'hsl()',
+        'deepgrey': '#cbc9ca',
+        // 'accentpink': 'hsl()',
+        'accentpink': '#ff7fd1',
+        // 'accentmagenta': 'hsl()',
+        'accentmagenta': '#c427fc',
+        'fontcolor': '#2d2d2d',
+      },
     },
   },
   plugins: [],
