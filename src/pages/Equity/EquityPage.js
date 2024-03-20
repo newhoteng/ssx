@@ -6,7 +6,7 @@ const EquityPage = () => {
   return (
     <main className="flex max-w-[1504px] my-0 mx-auto py-0 relative top-[55px]">
       {/* Side Nav */}
-      <nav className="px-4 py-4 flex flex-col items-cente gap-6 w-1/4 h-[calc(100vh-55px)] bg-lightgrey fixed left-0">
+      <nav className="px-4 py-4 flex flex-col items-cente gap-6 w-1/4 h-[calc(100vh-55px)] bg-lightgrey absolute left-0">
         <button className="bg-accentpink h-[30px] rounded-md">Dashboard</button>
         <button className="bg-accentpink h-[30px] rounded-md" >Reports</button>
         <button className="bg-accentpink h-[30px] rounded-md" >LP Trading</button>
