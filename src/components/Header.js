@@ -11,11 +11,12 @@ const Header = () => {
     fontWeight: isActive ? '700' : '400',
   });
 
+  // max-w-[1504px]
   return (
     <>
       <header className="bg-gray-200 fixed w-full z-[10]">
-        <div className="flex justify-between items-center h-[55px] max-w-[1504px] my-0 mx-auto px-4 py-0 ">
-          <div className="flex items-center justify-center gap-4">
+        <div className="flex justify-between items-center h-[55px] my-0 mx-auto px-8 py-0 ">
+          <div className="flex items-center justify-center gap-6">
             <div className="w-[40px] h-[40px] flex items-center justify-center">
               <img className="" src={CompanyLogo} alt="company logo" />
             </div>
