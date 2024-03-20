@@ -6,9 +6,21 @@ import { IoIosArrowDown } from "react-icons/io";
 import CompanyLogo from "../assets/favicon.webp"
 
 const Header = () => {
+
+  // Open and close mobile menu
+  // const mobileMenu = document.getElementById('sign-out');
+
+  // function toggleMobileMenu(menu) {
+  //   menu.classList.toggle('open');
+  // }
+
+  // mobileMenu.addEventListener('click', () => {
+  //   toggleMobileMenu(mobileMenu);
+  // });
+
   // Style for active link
   const navLinkStyles = ({ isActive }) => ({
-    fontWeight: isActive ? '700' : '400',
+    fontWeight: isActive ? '700' : '500',
   });
 
   // max-w-[1504px]
@@ -31,11 +43,12 @@ const Header = () => {
               <NavLink style={navLinkStyles} to="/liquidity">Liquidity</NavLink>
             </nav>
           </div>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-3 border relative">
             <button className="mr-[12px] flex items-center justify-center px-2 bg-accentmagenta text-white rounded-md h-[40px]">Request LP</button>
             <button className="bg-white text-lg rounded-full flex items-center justify-center w-[40px] h-[40px]"><VscBug /></button>
             <button className="bg-white text-xl rounded-full flex items-center justify-center w-[40px] h-[40px]"><IoIosNotificationsOutline /></button>
             <button className="bg-white rounded-full flex items-center justify-center w-[40px] h-[40px] relative"><span>HO</span><IoIosArrowDown className="absolute w-[40px] bottom-[-1px] text-gray-400" /></button>
+            <div id="sign-out" className="bg-white h-[35px] px-2 absolute right-0 bottom-[-40px] flex items-center justify-center">Sign Out</div>
           </div>
         </div>
       </header>

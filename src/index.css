@@ -8,7 +8,6 @@
   body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f9fafb;
-    /* background-color: aqua; */
     color: #374151;
     position: relative;
     /* #272e71 */
@@ -16,5 +15,17 @@
 
   input {
     outline: none;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  #sign-out {
+    display: none;
+  }
+
+  .open + #sign-out {
+    display: block;
   }
 }
