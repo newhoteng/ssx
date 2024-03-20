@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { VscBug } from "react-icons/vsc";
@@ -6,17 +6,18 @@ import { IoIosArrowDown } from "react-icons/io";
 import CompanyLogo from "../assets/favicon.webp"
 
 const Header = () => {
+  const [menuClass, setMenuClass] = useState('menu hidden');
+  const [isMenuClicked, setIsMenuClicked] = useState(false);
 
-  // Open and close mobile menu
-  // const mobileMenu = document.getElementById('sign-out');
+  const updateMenu = () => {
+    if (!isMenuClicked) {
+      setMenuClass('menu visible');
+    } else {
+      setMenuClass('menu hidden');
+    }
+    setIsMenuClicked(!isMenuClicked);
+  };
 
-  // function toggleMobileMenu(menu) {
-  //   menu.classList.toggle('open');
-  // }
-
-  // mobileMenu.addEventListener('click', () => {
-  //   toggleMobileMenu(mobileMenu);
-  // });
 
   // Style for active link
   const navLinkStyles = ({ isActive }) => ({
@@ -47,8 +48,8 @@ const Header = () => {
             <button className="mr-[12px] flex items-center justify-center px-2 bg-accentmagenta text-white rounded-md h-[40px]">Request LP</button>
             <button className="bg-white text-lg rounded-full flex items-center justify-center w-[40px] h-[40px]"><VscBug /></button>
             <button className="bg-white text-xl rounded-full flex items-center justify-center w-[40px] h-[40px]"><IoIosNotificationsOutline /></button>
-            <button className="bg-white rounded-full flex items-center justify-center w-[40px] h-[40px] relative"><span>HO</span><IoIosArrowDown className="absolute w-[40px] bottom-[-1px] text-gray-400" /></button>
-            <div id="sign-out" className="bg-white h-[35px] px-2 absolute right-0 bottom-[-40px] flex items-center justify-center">Sign Out</div>
+            <button onClick={updateMenu} className="bg-white rounded-full flex items-center justify-center w-[40px] h-[40px] relative"><span>HO</span><IoIosArrowDown className="absolute w-[40px] bottom-[-1px] text-gray-400" /></button>
+            <div id="sign-out" className={`${menuClass} bg-white h-[35px] px-2 absolute right-0 bottom-[-40px] flex items-center justify-center cursor-pointer`}>Sign Out</div>
           </div>
         </div>
       </header>
