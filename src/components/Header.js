@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { VscBug } from "react-icons/vsc";
+import { IoIosArrowDown } from "react-icons/io";
 import CompanyLogo from "../assets/favicon.webp"
 
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
             <div className="w-[40px] h-[40px] flex items-center justify-center">
               <img className="" src={CompanyLogo} alt="company logo" />
             </div>
-            <nav className="px-3 h-[40px] rounded-full border-2 border-violet-600 flex justify-center items-center gap-3">
+            <nav className="px-3 h-[40px] rounded-full border-2 border-accentmagenta flex justify-center items-center gap-3">
               <NavLink style={navLinkStyles} to="/">Equity</NavLink>
               <NavLink style={navLinkStyles} to="/fixedincome">Fixed Income</NavLink>
               <NavLink style={navLinkStyles} to="/myaccounts">My Accounts</NavLink>
@@ -30,10 +31,10 @@ const Header = () => {
             </nav>
           </div>
           <div className="flex items-center justify-center gap-3">
-            <button className="mr-[30px] flex items-center justify-center px-2 bg-violet-600 text-white rounded-md h-[40px]">Request LP</button>
+            <button className="mr-[30px] flex items-center justify-center px-2 bg-accentmagenta text-white rounded-md h-[40px]">Request LP</button>
             <button className="bg-white text-lg rounded-full flex items-center justify-center w-[40px] h-[40px]"><VscBug /></button>
             <button className="bg-white text-xl rounded-full flex items-center justify-center w-[40px] h-[40px]"><IoIosNotificationsOutline /></button>
-            <button className="bg-white rounded-full flex items-center justify-center w-[40px] h-[40px]">HO</button>
+            <button className="bg-white rounded-full flex items-center justify-center w-[40px] h-[40px] relative"><span>HO</span><IoIosArrowDown className="absolute w-[40px] bottom-[-1px]" /></button>
           </div>
         </div>
       </header>
