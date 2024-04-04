@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { VscBug } from "react-icons/vsc";
-import {
-  PiChatTeardropDotsLight, PiBellLight, PiCaretDownLight, PiMagnifyingGlassLight,
-} from 'react-icons/pi';
-import { IoIosArrowDown } from "react-icons/io";
+import { PiCaretDownLight } from 'react-icons/pi';
 import CompanyLogo from "../assets/favicon.webp"
 
 const Header = () => {
@@ -49,12 +46,12 @@ const Header = () => {
               <NavLink className="text-center w-min hover:text-[color:#0B6CB4]" style={navLinkStyles} to="/liquidity">LIQUIDITY</NavLink>
             </nav>
           </div>
-          <div className="flex items-center justify-center xl:gap-3 md:gap-3">
+          <div className="flex items-center justify-center xl:gap-3 md:gap-3 relative">
             <button className="flex items-center justify-center px-3 h-[35px] border-2 border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4] rounded-md text-[16px] w-max">Request LP</button>
             <button className="text-lg"><VscBug /></button>
             <button className="text-xl"><IoIosNotificationsOutline /></button>
             <button onClick={updateUser} className="flex items-center justify-center gap-[2px]"><span className="w-[35px] h-[35px] rounded-full flex items-center justify-center  border-[0.5px] border-[#606060]" >HO</span><PiCaretDownLight className="text-lg" /></button>
-            <div id="sign-out" className={`${signOutClass} bg-white h-[35px] px-2 absolute right-0 bottom-[-40px] flex items-center justify-center cursor-pointer`}>Sign Out</div>
+            <div id="sign-out" className={`${signOutClass} bg-white h-[35px] px-2 absolute right-0 bottom-[-35px] flex items-center justify-center cursor-pointer`}>Sign Out</div>
           </div>
         </div>
       </header>
@@ -64,5 +61,3 @@ const Header = () => {
 }
 
 export default Header
-
-// xl:mr-[12px]

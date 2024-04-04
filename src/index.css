@@ -9,9 +9,10 @@
   body {
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Roboto', sans-serif;
+    background-color: red;
     background-color: #f9fafb;
     /* color: #374151; */
-    color: #032E42;
+    /* color: #032E42; */
     color: #606060;
     position: relative;
     /* #032E42 */
