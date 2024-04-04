@@ -50,7 +50,7 @@ const Header = () => {
             <button className="flex items-center justify-center px-3 h-[35px] border-2 border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4] rounded-md text-[16px] w-max">Request LP</button>
             <button className="text-lg"><VscBug /></button>
             <button className="text-xl"><IoIosNotificationsOutline /></button>
-            <button onClick={updateUser} className="flex items-center justify-center gap-[2px]"><span className="w-[35px] h-[35px] rounded-full flex items-center justify-center  border-[0.5px] border-[#606060]" >HO</span><PiCaretDownLight className="text-lg" /></button>
+            <button onClick={updateUser} className="flex items-center justify-center gap-[2px]"><span className="w-[35px] h-[35px] rounded-full flex items-center justify-center  border-[0.5px] border-[#d1d2d5]" >HO</span><PiCaretDownLight className="text-lg" /></button>
             <div id="sign-out" className={`${signOutClass} bg-white h-[35px] px-2 absolute right-0 bottom-[-35px] flex items-center justify-center cursor-pointer`}>Sign Out</div>
           </div>
         </div>

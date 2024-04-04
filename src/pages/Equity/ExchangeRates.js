@@ -9,9 +9,9 @@ import cediPounds from "../../data/CediPound.json";
 
 const ExchangeRates = () => {
   return (
-    <div className="flex flex-col gap-4 mb-[50px]">
+    <div className="flex flex-col gap-4 mb-[50px] border-[1px] rounded-md border-[#E5E7EB] bg-white px-8 py-6">
           <div className="flex sm:flex-row flex-col items-center gap-4 sm:justify-between">
-            <h2 className="font-bold">Exchange Rates</h2>
+            <h2 className="font-medium font-['Fira_Sans'] text-[17px] text-[#0B66B4]">Exchange Rates</h2>
             <form>
               <select name="currency" className="rounded border-[0.5px] border-deepgrey w-[300px] h-[40px] outline-none">
                 <option value="cedis"><span>Cedis</span> <FaCediSign /></option>

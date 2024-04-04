@@ -1,11 +1,12 @@
 import React from 'react';
 
+// flex items-center justify-center px-3 h-[35px] border-2 border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4] rounded-md text-[16px] w-max
 const RecentRequests = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 border-[1px] rounded-md border-[#E5E7EB] bg-white py-6 px-8">
       <div className="flex items-center justify-between">
-        <h2 className="font-bold">Recent Requests</h2>
-        <button className="px-2 font-medium h-[40px] border-2 rounded-md border-accentmagenta">View All Requests</button>
+        <h2 className="font-medium font-['Fira_Sans'] text-[17px] text-[#0B66B4]">Recent Requests</h2>
+        <button className="px-3 text-[16px] h-[35px] border-2 rounded-md border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4]">View All Requests</button>
       </div>
       <table className="">
         <thead>
