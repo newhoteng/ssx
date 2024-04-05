@@ -14,7 +14,7 @@ const ExchangeRates = () => {
             <h2 className="font-medium font-['Fira_Sans'] text-[17px] text-[#0B66B4]">Exchange Rates</h2>
             <form>
               <select name="currency" className="rounded border-[0.5px] border-deepgrey w-[300px] h-[40px] outline-none">
-                <option value="cedis"><span>Cedis</span> <FaCediSign /></option>
+                <option value="cedis">Cedis</option>
                 <option value="naira">Naira</option>
                 <option value="shilling">Shilling</option>
                 <option value="rand">Rand</option>

@@ -22,14 +22,14 @@ const SideNav = () => {
       <p className="font-normal cursor-pointer" >Reports</p>
       <p className="font-normal cursor-pointer" >LP Trading</p>
       <p className="font-normal cursor-pointer" >Trading History</p>
-      <p onClick={updateMenu} className="font-normal mt-auto flex items-center justify-start gap-2 relative cursor-pointer" >
+      <button onClick={updateMenu} className="font-normal mt-auto flex items-center justify-start gap-2 relative cursor-pointer" >
         <span>Code Maintenance</span>
         <PiCaretUpLight />
         <div className={`${menuClass} bg-white absolute w-full text-[#374151] top-[-80px]`}>
           <div className="h-[40px] border flex items-center justify-center">Some Menu Item</div>
           <div className="h-[40px] border flex items-center justify-center">Some Menu Item</div>
         </div>
-      </p>
+      </button>
 
     </nav>
   )
