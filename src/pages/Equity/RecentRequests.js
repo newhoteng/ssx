@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import requestData from '../../data/Mock_request_data.json;'
 
 const RecentRequests = () => {
-  const [hiddenRowClass, setHiddenRowClass] = useState('hidden');
+  const [ hiddenRowClass, setHiddenRowClass ] = useState('hidden');
+  const [ data, setData ] = useState(requestData)
 
   const updateRowVisibility = () => {
     if (hiddenRowClass == "hidden") {
@@ -36,6 +38,20 @@ const RecentRequests = () => {
           </tr>
         </thead>
         <tbody className="text-center font-light">
+          {data.map((d) => (
+            <tr
+              className="h-[35px]"
+              key={d.transaction_id}
+            >
+              <td className="sm:table-cell hidden">{d.provider}</td>
+              <td className="sm:table-cell hidden">{d.broker}</td>
+              <td>123466</td>
+              <td>23,400.00</td>
+              <td className="sm:table-cell hidden">56789</td>
+              <td>Fullfilled</td>
+              <td className="sm:table-cell hidden">01-09-2023</td>
+            </tr>
+          ))}
           <tr className="h-[35px]">
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">CDH</td>
