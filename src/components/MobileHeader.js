@@ -82,15 +82,6 @@ const MobileHeaderjs = () => {
           <NavLink onClick={handleNavClick} className="text-center w-min hover:text-[color:#0B6CB4]" style={navLinkStyles} to="/analytics">ANALYTICS</NavLink>
           <NavLink onClick={handleNavClick} className="text-center w-min hover:text-[color:#0B6CB4]" style={navLinkStyles} to="/liquidity">LIQUIDITY</NavLink>
 
-          {/* <NavLink onClick={handleNavClick} style={navLinkStyles} to="/">Equity</NavLink>
-          <NavLink onClick={handleNavClick} style={navLinkStyles} to="/fixedincome">Fixed Income</NavLink>
-          <NavLink onClick={handleNavClick} style={navLinkStyles} to="/myaccounts">My Accounts</NavLink>
-          <NavLink onClick={handleNavClick} style={navLinkStyles} to="/newsroom">Newsroom</NavLink>
-          <NavLink onClick={handleNavClick} style={navLinkStyles} to="/research">Research</NavLink>
-          <NavLink onClick={handleNavClick} style={navLinkStyles} to="/marketdata">Market Data</NavLink>
-          <NavLink onClick={handleNavClick} style={navLinkStyles} to="/analytics">Analytics</NavLink>
-          <NavLink onClick={handleNavClick} style={navLinkStyles} to="/liquidity">Liquidity</NavLink> */}
-
           {/* <p className="font-normal cursor-pointer" >Dashboard</p>
           <p className="font-normal cursor-pointer" >Reports</p>
           <p className="font-normal cursor-pointer" >LP Trading</p>
