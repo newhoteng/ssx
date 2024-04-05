@@ -47,7 +47,7 @@ const Header = () => {
             </nav>
           </div>
           <div className="flex items-center justify-center xl:gap-3 md:gap-3 relative">
-            <button className="flex items-center justify-center px-3 h-[35px] border-2 border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4] rounded-md text-[16px] w-max">Request LP</button>
+            <NavLink to="/requestlp" className="flex items-center justify-center px-3 h-[35px] border-2 border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4] rounded-md text-[16px] w-max">Request LP</NavLink>
             <button className="text-lg"><VscBug /></button>
             <button className="text-xl"><IoIosNotificationsOutline /></button>
             <button onClick={updateUser} className="flex items-center justify-center gap-[2px]"><span className="w-[35px] h-[35px] rounded-full flex items-center justify-center  border-[0.5px] border-[#d1d2d5]" >HO</span><PiCaretDownLight className="text-lg" /></button>

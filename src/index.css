@@ -14,7 +14,8 @@
     position: relative;
   }
 
-  input {
+  input,
+  textarea {
     outline: none;
   }
 
@@ -31,33 +32,5 @@
 
   tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
-  }
-
-  .selectBox {
-    appearance: none;
-    border: none;
-    border: 1px solid #fff;
-    border-radius: 25px;
-    padding: 0 30px 0 15px;
-    width: 100%;
-    color: #fff;
-    background-color: transparent;
-    z-index: 1;
-  }
-    
-    
-    .arrowIcon {
-      height: 100%;
-      position: absolute;
-      right: 15px;
-    }
-
-
-  .selectContainer {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 150px;
-    height: 50px;
   }
 }

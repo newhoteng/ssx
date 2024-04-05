@@ -1,7 +1,4 @@
-// import logo from './logo.svg';
-// import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Header from './components/Header';
 import NavBar from './components/NavBar';
 import EquityPage from './pages/Equity/EquityPage';
 import AnalyticsPage from './pages/Analytics/AnalyticsPage';
@@ -11,6 +8,7 @@ import NewsroomPage from './pages/Newsroom/NewsroomPage';
 import ResearchPage from './pages/Research/ResearchPage';
 import MarketDataPage from './pages/MarketData/MarketDataPage';
 import LiquidityPage from './pages/Liquidity/LiquidityPage';
+import RequestFormPage from './pages/LPRequest/RequestFormPage';
 
 
 function App() {
@@ -26,6 +24,7 @@ function App() {
           <Route path="/marketdata" element={<MarketDataPage />} />
           <Route path="/analytics" element={<AnalyticsPage />} />
           <Route path="/liquidity" element={<LiquidityPage />} />
+          <Route path="/requestlp" element={<RequestFormPage />} />
           <Route path="/*" element={<div>Page not found</div>} />
         </Route>
       </Routes>
