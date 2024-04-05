@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-// flex items-center justify-center px-3 h-[35px] border-2 border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4] rounded-md text-[16px] w-max
 const RecentRequests = () => {
+  const [hiddenRowClass, setHiddenRowClass] = useState('hidden');
+
+  const updateRowVisibility = () => {
+    if (hiddenRowClass == "hidden") {
+      setHiddenRowClass('visible');
+    } else {
+      setHiddenRowClass('hidden');
+    }
+  };
+
   return (
     <div className="flex flex-col gap-4 border-[1px] rounded-md border-[#E5E7EB] bg-white py-6 px-8">
       <div className="flex items-center justify-between">
         <h2 className="font-medium font-['Fira_Sans'] text-[17px] text-[#0B66B4]">Recent Requests</h2>
-        <button className="px-3 text-[16px] h-[35px] border-2 rounded-md border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4]">View All Requests</button>
+        <button
+          type="button"
+          className="px-3 text-[16px] h-[35px] border-2 rounded-md border-[#0B6CB4] text-[#0B6CB4] hover:text-white hover:bg-[#0B6CB4]"
+          onClick={updateRowVisibility}
+        >
+          {hiddenRowClass == 'hidden' ? 'View All Requests' : 'View Less Requests'}
+        </button>
       </div>
       <table className="">
         <thead>
-          <tr className="border-y-2 border-white bg-deepgrey text-center h-[50px] tab-head">
+          <tr className="text-center h-[50px] tab-head">
             <th className="sm:table-cell hidden" scope="col">Provider</th>
             <th className="sm:table-cell hidden" scope="col">Broker</th>
             <th scope="col">Client ID</th>
@@ -20,8 +35,8 @@ const RecentRequests = () => {
             <th className="sm:table-cell hidden" scope="col">Date</th>
           </tr>
         </thead>
-        <tbody className="text-center">
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+        <tbody className="text-center font-light">
+          <tr className="h-[35px]">
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
@@ -30,7 +45,7 @@ const RecentRequests = () => {
             <td>Fullfilled</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className="h-[35px]">
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
@@ -39,7 +54,7 @@ const RecentRequests = () => {
             <td>Pending</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className="h-[35px]">
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
@@ -48,7 +63,7 @@ const RecentRequests = () => {
             <td>Fullfilled</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className="h-[35px]">
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
@@ -57,7 +72,7 @@ const RecentRequests = () => {
             <td>Pending</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className="h-[35px]">
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
@@ -66,7 +81,7 @@ const RecentRequests = () => {
             <td>Fullfilled</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className={`${hiddenRowClass} h-[35px]`}>
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
@@ -75,7 +90,7 @@ const RecentRequests = () => {
             <td>Pending</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className={`${hiddenRowClass} h-[35px]`}>
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
@@ -84,7 +99,7 @@ const RecentRequests = () => {
             <td>Fullfilled</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className={`${hiddenRowClass} h-[35px]`}>
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
@@ -93,7 +108,7 @@ const RecentRequests = () => {
             <td>Pending</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className={`${hiddenRowClass} h-[35px]`}>
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
@@ -102,7 +117,7 @@ const RecentRequests = () => {
             <td>Fullfilled</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className={`${hiddenRowClass} h-[35px]`}>
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>
@@ -111,7 +126,7 @@ const RecentRequests = () => {
             <td>Pending</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className={`${hiddenRowClass} h-[35px]`}>
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">CDH</td>
             <td>123466</td>
@@ -120,61 +135,7 @@ const RecentRequests = () => {
             <td>Fullfilled</td>
             <td className="sm:table-cell hidden">01-09-2023</td>
           </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td className="sm:table-cell hidden">Example</td>
-            <td className="sm:table-cell hidden">GoldCoast</td>
-            <td>123456</td>
-            <td>1,200,000.00</td>
-            <td className="sm:table-cell hidden">56789</td>
-            <td>Pending</td>
-            <td className="sm:table-cell hidden">01-09-2023</td>
-          </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td className="sm:table-cell hidden">Example</td>
-            <td className="sm:table-cell hidden">CDH</td>
-            <td>123466</td>
-            <td>23,400.00</td>
-            <td className="sm:table-cell hidden">56789</td>
-            <td>Fullfilled</td>
-            <td className="sm:table-cell hidden">01-09-2023</td>
-          </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td className="sm:table-cell hidden">Example</td>
-            <td className="sm:table-cell hidden">GoldCoast</td>
-            <td>123456</td>
-            <td>1,200,000.00</td>
-            <td className="sm:table-cell hidden">56789</td>
-            <td>Pending</td>
-            <td className="sm:table-cell hidden">01-09-2023</td>
-          </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td className="sm:table-cell hidden">Example</td>
-            <td className="sm:table-cell hidden">CDH</td>
-            <td>123466</td>
-            <td>23,400.00</td>
-            <td className="sm:table-cell hidden">56789</td>
-            <td>Fullfilled</td>
-            <td className="sm:table-cell hidden">01-09-2023</td>
-          </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td className="sm:table-cell hidden">Example</td>
-            <td className="sm:table-cell hidden">GoldCoast</td>
-            <td>123456</td>
-            <td>1,200,000.00</td>
-            <td className="sm:table-cell hidden">56789</td>
-            <td>Pending</td>
-            <td className="sm:table-cell hidden">01-09-2023</td>
-          </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
-            <td className="sm:table-cell hidden">Example</td>
-            <td className="sm:table-cell hidden">CDH</td>
-            <td>123466</td>
-            <td>23,400.00</td>
-            <td className="sm:table-cell hidden">56789</td>
-            <td>Fullfilled</td>
-            <td className="sm:table-cell hidden">01-09-2023</td>
-          </tr>
-          <tr className="bg-lightgrey border-y-2 border-white h-[35px]">
+          <tr className={`${hiddenRowClass} h-[35px]`}>
             <td className="sm:table-cell hidden">Example</td>
             <td className="sm:table-cell hidden">GoldCoast</td>
             <td>123456</td>

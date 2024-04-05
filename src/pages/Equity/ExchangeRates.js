@@ -21,8 +21,8 @@ const ExchangeRates = () => {
               </select>
             </form>
           </div>
-          <div className="flex flex-col xl:flex-row gap-4">
-            <div className="border rounded-md xl:w-1/3 aspect-video xl:aspect-video bg-lightgrey">
+          <div className="flex flex-col xl:flex-row flex-wrap gap-4 border border-red-600">
+            <div className="xl:w-1/2 aspect-video">
               <Line data={{
                 labels: cediDollar.map((data) => data.label),
                 datasets: [
@@ -43,7 +43,7 @@ const ExchangeRates = () => {
               }}
                />
             </div>
-            <div className="border rounded-md xl:w-1/3 aspect-video xl:aspect-video bg-lightgrey">
+            <div className="border rounded-md xl:w-1/2 aspect-video xl:aspect-video bg-lightgrey">
               <Line data={{
                 labels: cediEuro.map((data) => data.label),
                 datasets: [
@@ -64,7 +64,7 @@ const ExchangeRates = () => {
               }}
                />
             </div>
-            <div className="border rounded-md xl:w-1/3 aspect-video xl:aspect-video bg-lightgrey">
+            <div className="border rounded-md xl:w-1/2 aspect-video xl:aspect-video bg-lightgrey">
               <Line data={{
                 labels: cediPounds.map((data) => data.label),
                 datasets: [

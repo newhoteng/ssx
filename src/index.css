@@ -10,7 +10,7 @@
   body {
     /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Roboto', sans-serif;
-    background-color: red;
+    /* background-color: red; */
     background-color: #f9fafb;
     /* color: #374151; */
     /* color: #032E42; */
@@ -26,6 +26,17 @@
   }
 
   th {
-    font-weight: 600;
+    font-weight: 500;
+    color: #032E42;
+  }
+
+/* Imported */  
+  td,
+  th {
+    border: 1px solid #dee2e6;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
   }
 }

@@ -29,8 +29,8 @@ const Header = () => {
   // max-w-[1504px]
   return (
     <>
-      <header className="bg-white fixed w-full z-[10] shadow-xl">
-        <div className="text-[15px] h-[107px] flex justify-between items-center my-0 mx-auto px-2 xl:px-8 py-0 ">
+      <header className="bg-white fixed w-full z-[10] shadow-lg">
+        <div className="text-[15px] h-[107px] flex justify-between items-center my-0 mx-auto px-2 xl:px-8 lg:px-6 py-0 ">
           <div className="flex items-center justify-center xl:gap-6 md:gap-2">
             <div className="w-[40px] h-[40px] flex items-center justify-center">
               <img className="" src={CompanyLogo} alt="company logo" />
