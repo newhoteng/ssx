@@ -2,7 +2,6 @@ import React from 'react'
 
 const RequestFormPage = () => {
   return (
-    // className="flex my-0 mx-auto py-0 relative top-[107px]"
     <div className="relative top-[107px] h-[calc(100vh-107px)] flex items-center">
       <form className="px-4 py-4 mx-auto w-full max-w-[500px] flex flex-col gap-4">
         <input className='bg-transparent border-b-2 w-full h-[40px]' type='text' placeholder="Name" ></input>

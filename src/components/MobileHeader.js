@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { VscBug } from "react-icons/vsc";
-import { IoIosArrowDown } from "react-icons/io";
 import { PiCaretDownLight } from 'react-icons/pi';
 import CompanyLogo from "../assets/favicon.webp";
-import { IoIosArrowUp } from "react-icons/io";
-import { PiCaretUpLight } from 'react-icons/pi';
 
 
 const MobileHeaderjs = () => {
@@ -63,7 +60,6 @@ const MobileHeaderjs = () => {
             <button className="bg-white text-lg rounded-full flex items-center justify-center w-[40px] h-[40px]"><VscBug /></button>
             <button className="bg-white text-xl rounded-full flex items-center justify-center w-[40px] h-[40px]"><IoIosNotificationsOutline /></button>
             <button onClick={updateUser} className="flex items-center justify-center gap-[2px]"><span className="w-[35px] h-[35px] rounded-full flex items-center justify-center  border-[0.5px] border-[#d1d2d5]" >HO</span><PiCaretDownLight className="text-lg" /></button>
-            {/* <button onClick={updateUser} className="bg-white rounded-full flex items-center justify-center w-[40px] h-[40px] relative"><span>HO</span><IoIosArrowDown className="absolute w-[40px] bottom-[-1px] text-gray-400" /></button> */}
             <div id="sign-out" className={`${signOutClass} bg-white h-[35px] px-2 absolute right-0 bottom-[-40px] flex items-center justify-center cursor-pointer`}>Sign Out</div>
             <div className="burger-menu rounded-full bg-white w-[40px] h-[40px] flex flex-col items-center justify-center gap-[3px]" onClick={updateMenu} role="presentation">
               <div className={`${burgerClass} w-1/2 border border-[#374151] bg-[#374151] h-[3px]`} />

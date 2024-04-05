@@ -26,7 +26,6 @@ const Header = () => {
     color: isActive ? '#0B6CB4' : '',
   });
 
-  // max-w-[1504px]
   return (
     <>
       <header className="bg-white fixed w-full z-[10] shadow-lg">

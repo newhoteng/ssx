@@ -2,8 +2,6 @@ import React from 'react';
 import { Chart as ChartJS} from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import { PiCaretDownLight } from 'react-icons/pi';
-import { FaCediSign } from "react-icons/fa6";
-
 import cediDollar from "../../data/CediDollar.json";
 import cediEuro from "../../data/CediEuro.json";
 import cediPounds from "../../data/CediPound.json";
