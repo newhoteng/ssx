@@ -68,11 +68,11 @@ const RecentRequests = () => {
 
   const updateRowVisibility = () => {
     if (rowsToDisplay == 5) {
+      setData(requestData)
       setRowsToDisplay(requestData.length);
-      setData(requestData.slice(0, rowsToDisplay))
-    } else {
+    } if (rowsToDisplay !== 5) {
+      setData(requestData.slice(0, 5))
       setRowsToDisplay(5);
-      setData(requestData.slice(0, rowsToDisplay))
     }
   };
 

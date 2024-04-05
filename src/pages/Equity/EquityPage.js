@@ -18,5 +18,3 @@ const EquityPage = () => {
 }
 
 export default EquityPage
-
-// className="py-4 px-2 xl:px-8 w-full lg:w-3/4 lg:ml-[25%] border-4 border-blue-600 bg-white"

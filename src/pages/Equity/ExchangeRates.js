@@ -21,8 +21,8 @@ const ExchangeRates = () => {
               </select>
             </form>
           </div>
-          <div className="flex flex-col xl:flex-row flex-wrap gap-4 border border-red-600">
-            <div className="xl:w-1/2 aspect-video">
+          <div className="border border-red-600 flex flex-wrap justify-center items-center gap-8">
+            <div className="border border-blue-600 w-1/3">
               <Line data={{
                 labels: cediDollar.map((data) => data.label),
                 datasets: [
@@ -37,13 +37,13 @@ const ExchangeRates = () => {
               options={{
                 elements: {
                   line: {
-                    tension: 0.5,
+                    tension: 0,
                   }
                 },
               }}
                />
             </div>
-            <div className="border rounded-md xl:w-1/2 aspect-video xl:aspect-video bg-lightgrey">
+            <div className="border borde-blue-600 w-1/3">
               <Line data={{
                 labels: cediEuro.map((data) => data.label),
                 datasets: [
@@ -57,14 +57,14 @@ const ExchangeRates = () => {
               }}
               options={{
                 elements: {
-                  line: {
-                    tension: 0.5,
-                  }
+                  // line: {
+                  //   tension: 0.5,
+                  // }
                 },
               }}
                />
             </div>
-            <div className="border rounded-md xl:w-1/2 aspect-video xl:aspect-video bg-lightgrey">
+            <div className="border border-blue-600 w-1/3">
               <Line data={{
                 labels: cediPounds.map((data) => data.label),
                 datasets: [
@@ -78,9 +78,9 @@ const ExchangeRates = () => {
               }}
               options={{
                 elements: {
-                  line: {
-                    tension: 0.5,
-                  }
+                  // line: {
+                  //   tension: 0.5,
+                  // }
                 },
               }}
                />

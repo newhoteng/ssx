@@ -14,8 +14,6 @@ const SideNav = () => {
     setIsMenuClicked(!isMenuClicked);
   };
 
-  // px-2 xl:px-8 lg:px-6
-
   return (
     <nav className="hidden px-2 lg:px-6 xl:px-8 py-8 lg:flex flex-col items-start gap-4 w-1/4 h-[calc(100vh-107px)] fixed text-[17px]">
       <p className="font-normal cursor-pointer" >Dashboard</p>
@@ -30,7 +28,6 @@ const SideNav = () => {
           <div className="h-[40px] border flex items-center justify-center">Some Menu Item</div>
         </div>
       </button>
-
     </nav>
   )
 }
